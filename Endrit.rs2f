@@ -8,11 +8,13 @@ meta { name = "Endrit"; description = "Endrit's Ironman Filter"; }
 
 
 
+
 /*@ define:module:greetings
 name: Welcome to Endrit's Iron Filter
 description:
     This is filter made for Ironman players. Sit back, relax, and turn off item value. Items are organized into different tiers base on value to ironman, rather than GE price. 
 */
+
 
 
 
@@ -79,6 +81,7 @@ group: Show
 
 
 
+
 /*@ define:module:hidden
 name: Hidden Items
 subtitle: For when you NEVER want to see that item again  
@@ -89,7 +92,7 @@ label: Hide All
 type: stringlist
 group: User
 */
-#define HIDE_USER ["Leather gloves","Leather boots","Coif","Leather body","Leather chaps","Leather cowl","Leather vambraces","Studded body","Studded chaps","Frog-leather body","Frog-leather chaps","Frog-leather boots","Snakeskin bandana","Snakeskin body","Snakeskin boots","Snakeskin chaps","Snakeskin vambraces","Shortbow","Oak shortbow","Willow shortbow","Maple shortbow","Yew shortbow","Magic shortbow","Longbow","Oak longbow","Willow longbow","Maple longbow","Yew longbow","Magic longbow","Dorgeshuun crossbow","Staff of air","Staff of water","Staff of earth","Staff of fire","magic staff","Staff","Zamorak monk top","Zamorak monk bottom","Blue wizard hat","Blue wizard robe","Blue skirt","Wizard hat","Black robe","Black skirt","Xerician hat","Xerician top","Xerician robe","Cake tin","Pie dish","Pot of flour","Jug of water","Bucket of water","Bowl of water","Bucket of milk","Pineapple","Raw shrimps","Chopped garlic","Big fishing net","Small fishing net","Lobster pot","Fly fishing rod","Harpoon","Air talisman","Mind talisman","Water talisman","Earth talisman","Fire talisman","Body talisman","Cosmic talisman","Chaos talisman","Nature talisman","Law talisman","Wrath talisman","Bird snare","Teasing stick","Butterfly net","Noose wand","Rabbit snare","burnt *","Ruined chompy","Snake over-cooked","Spider on shaft (burnt)","Bread","Beer","Asgarnian ale","Cup of tea","Beer tankard","Keg of beer","Vial","Pot","Jug","Bowl","Barrel","Beer glass","Tankard","Hammer","Chisel","Rope","Pestle and mortar","saw","shears","tinderbox","Gardening trowel","Rake","Secateurs","Seed dibber","Spade","Trowel","Watering can","Seaweed","Waterskin*","Doogle leaves","Papyrus","Broken glass","Lit candle","Candle","King worm","Tile","Stone ball","Silk","Fingernails","Rusty sword","Red dye","Cowhide","Ashes","Coins","Bones","Lockpick","Coal","Bronze pickaxe","Raw chicken","Ham logo","Bronze axe","Iron axe","Buttons","Knife","Uncut jade","Steel arrow","Grimy guam leaf","Iron ore","BRonze arrow","Logs","Thread","Feather","Iron dagger","Needle","Damaged armour","Ham cloak","Ham hood","Ham boots","Grimy marrentiill","Steel dagger","Grimy tarromin","Marrentill seed","Bark","Rune dagger","Adamant platelegs","Rune javelin","Rune arrow","Nature rune","Blood pint","Uncut ruby","Jangerberry seed","Steel bar","Black sq shield","Air rune","Adamant longsword","Water rune","Law rune","Adamant battleaxe","Fire rune","Soul rune","Araxyte venom sack","Chaos rune","Death rune","Gold ore","Harralander seed","Earth rune","Strawberry seed","Grimy kwuarm","Rune med helm","Belladonna seed","Avantoe seed","Cosmic rune","Irit seed","Grimy harralander","Limpwurt seed","Wildblood seed","Tarromin seed","Empty plant pot","Iron pickaxe","Big bones","Cave worms"]
+#define HIDE_USER ["Leather gloves","Leather boots","Coif","Leather body","Leather chaps","Leather cowl","Leather vambraces","Studded body","Studded chaps","Frog-leather body","Frog-leather chaps","Frog-leather boots","Snakeskin bandana","Snakeskin body","Snakeskin boots","Snakeskin chaps","Snakeskin vambraces","Shortbow","Oak shortbow","Willow shortbow","Maple shortbow","Yew shortbow","Magic shortbow","Longbow","Oak longbow","Willow longbow","Maple longbow","Yew longbow","Magic longbow","Dorgeshuun crossbow","Staff of air","Staff of water","Staff of earth","Staff of fire","magic staff","Staff","Zamorak monk top","Zamorak monk bottom","Blue wizard hat","Blue wizard robe","Blue skirt","Wizard hat","Black robe","Black skirt","Xerician hat","Xerician top","Xerician robe","Cake tin","Pie dish","Pot of flour","Jug of water","Bucket of water","Bowl of water","Bucket of milk","Pineapple","Raw shrimps","Chopped garlic","Big fishing net","Small fishing net","Lobster pot","Fly fishing rod","Harpoon","Air talisman","Mind talisman","Water talisman","Earth talisman","Fire talisman","Body talisman","Cosmic talisman","Chaos talisman","Nature talisman","Law talisman","Wrath talisman","Bird snare","Teasing stick","Butterfly net","Noose wand","Rabbit snare","burnt *","Ruined chompy","Snake over-cooked","Spider on shaft (burnt)","Bread","Beer","Asgarnian ale","Cup of tea","Beer tankard","Keg of beer","Vial","Pot","Jug","Bowl","Barrel","Beer glass","Tankard","Hammer","Chisel","Rope","Pestle and mortar","saw","shears","tinderbox","Gardening trowel","Rake","Secateurs","Seed dibber","Spade","Trowel","Watering can","Seaweed","Waterskin*","Doogle leaves","Papyrus","Broken glass","Lit candle","Candle","King worm","Tile","Stone ball","Silk","Fingernails","Rusty sword","Red dye","Cowhide","Ashes","Coins","Bones","Lockpick","Coal","Bronze pickaxe","Raw chicken","Ham logo","Bronze axe","Iron axe","Buttons","Knife","Uncut jade","Steel arrow","Grimy guam leaf","Iron ore","BRonze arrow","Logs","Thread","Feather","Iron dagger","Needle","Damaged armour","Ham cloak","Ham hood","Ham boots","Grimy marrentiill","Steel dagger","Grimy tarromin","Marrentill seed","Bark","Rune dagger","Adamant platelegs","Rune javelin","Rune arrow","Nature rune","Blood pint","Uncut ruby","Jangerberry seed","Steel bar","Black sq shield","Air rune","Adamant longsword","Water rune","Law rune","Adamant battleaxe","Fire rune","Soul rune","Araxyte venom sack","Chaos rune","Death rune","Gold ore","Harralander seed","Earth rune","Strawberry seed","Grimy kwuarm","Rune med helm","Belladonna seed","Avantoe seed","Cosmic rune","Irit seed","Grimy harralander","Limpwurt seed","Wildblood seed","Tarromin seed","Empty plant pot","Iron pickaxe","Big bones","Cave worms","Cave worms"]
 
 apply (name:HIDE_USER) {hidden=true;}
 
@@ -272,6 +275,7 @@ rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2
 
 
 
+
 /*@ define:module:food_and_pots
 name: Food and Potions
 subtitle: Never Forget your Pots Again
@@ -370,6 +374,7 @@ rule (name:EXTRA_FOOD_3_NAMES && stackable:false) {EXTRA_FOOD_3_STYLE}
 
 
 
+
 /*@ define:module:uniques
 name: Uniques 
 subtitle: Style your Collection Log drops 
@@ -379,25 +384,25 @@ subtitle: Style your Collection Log drops
 label: SS Tier Uniques
 type: style
 */
-#define UNIQUE_SS_STYLE textColor = "#FFFF9600";backgroundColor = "#00ff0000";borderColor = "#00ff0000";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;highlightTile = false;sound = "Unique_SS.wav";
+#define UNIQUE_SS_STYLE hidden = true;
 
 /*@ define:input:uniques
 label: S Tier Uniques
 type: style
 */
-#define UNIQUE_S_STYLE textColor = "#FFFF66B2";backgroundColor = "#00ff0000";borderColor = "#00ff0000";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;highlightTile = false;sound = "Unique_SS.wav";menuSort = 1000000;
+#define UNIQUE_S_STYLE hidden = true;
 
 /*@ define:input:uniques
 label: A Tier Uniques
 type: style
 */
-#define UNIQUE_A_STYLE textColor = "#FF99FF99";backgroundColor = "#00ff0000";borderColor = "#00ff0000";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;highlightTile = false;sound = "Unique_SS.wav";menuSort = 100000;
+#define UNIQUE_A_STYLE hidden = true;
 
 /*@ define:input:uniques
 label: B Tier Uniques
 type: style
 */
-#define UNIQUE_B_STYLE textColor = "#FF66B2FF";backgroundColor = "#00ff0000";borderColor = "#00ff0000";textAccent = 1;fontType = 2;showLootbeam = false;showValue = false;showDespawn = false;highlightTile = false;sound = "Unique_SS.wav";menuSort = 30000;
+#define UNIQUE_B_STYLE hidden = true;
 
 /*@ define:input:uniques
 label: C Tier Uniques
@@ -428,7 +433,7 @@ enum: [
 ]
 group: Special Drops
 */
-#define UNQIQUE_SPECIAL_SS_NAMES ["Abyssal dagger","Gold ring","Dragon chainbody","Smouldering stone"]
+#define UNQIQUE_SPECIAL_SS_NAMES []
 
 /*@ define:input:uniques
 label: S Tier Uniques
@@ -558,7 +563,7 @@ label: A Tier Uniques
 type: stringlist
 group: Custom Uniques
 */
-#define UNIQUE_CUSTOM_A_NAMES ["Trouver parchment"]
+#define UNIQUE_CUSTOM_A_NAMES []
 
 rule (name:UNIQUE_CUSTOM_A_NAMES) {UNIQUE_A_STYLE}
 
@@ -567,7 +572,7 @@ label: B Tier Uniques
 type: stringlist
 group: Custom Uniques
 */
-#define UNIQUE_CUSTOM_B_NAMES ["Magic shortbow scroll","Ring of wealth scroll"]
+#define UNIQUE_CUSTOM_B_NAMES []
 
 rule (name:UNIQUE_CUSTOM_B_NAMES) {UNIQUE_B_STYLE}
 
@@ -579,6 +584,7 @@ group: Custom Uniques
 #define UNIQUE_CUSTOM_C_NAMES ["Stinkhorn mushroom","Endarkened juice","Mallignum root plank","Larran's key","Looting bag","Dark totem top","Dark totem middle","Dark totem base","Ancient shard","Blood shard","Dragon defender","Mossy key","Brittle key","Buchu seed","Contract of sensory clouding","Contract of forfeit breath","Contract of divine severance","Contract of bloodied blows","Contract of glyphic attenuation","Dragon arrowtips","Rune knife","Dragon cannonball","Rune cannonball"]
 
 rule (name:UNIQUE_CUSTOM_C_NAMES) {UNIQUE_C_STYLE}
+
 
 
 
@@ -2111,6 +2117,7 @@ group: Smoke Devils
 #define SMOKE_DEVILS_SUPPLY []
 
 SUPPLY_DROP_RULESET([2378,9415,0,2429,9471,0], SMOKE_DEVILS_SUPPLY)
+
 
 
 
@@ -6263,6 +6270,7 @@ rule (name:WILDERNESS_BOSSES_C_UNIQUES) {UNIQUE_C_STYLE}
 
 
 
+
 /*@ define:module:cox
 name: Chambers of Xeric
 subtitle: Set Unique Teirs, Hide Drops, and Highlight Supplies
@@ -6499,6 +6507,7 @@ rule (area:[3210,5120,0,3369,5776,1] && name:SHOW_COX) {hidden = false;}
 
 
 
+
 /*@ define:module:tob
 name: Theatre of Blood
 subtitle: Set Unique Teirs, Hide Drops, and Highlight Supplies
@@ -6572,6 +6581,7 @@ exampleItem: Dawnbringer
 #define TOB_DAWNBRINGER hidden = false;textColor = "#ff00ffab";fontType = 3;showLootbeam = true;
 
 rule (name:"Dawnbringer") {TOB_DAWNBRINGER}
+
 
 
 
@@ -6706,6 +6716,7 @@ group: Red-X
 
 
 rule (area:[3786,5398,0,3828,5419,0] && ownership:2 && ENABLE_TOA_REDX) {TOA_REDX_STYLE}
+
 
 
 
@@ -6849,6 +6860,7 @@ exampleItem: Reward casket (master)
 #define CASKET_MASTER_STYLE textColor = "#ffc90808";backgroundColor = "#ffffffff";borderColor = "#ffc90808";
 
 rule (name:["Reward casket (master)"]) {CASKET_MASTER_STYLE}
+
 
 
 
@@ -7307,6 +7319,7 @@ rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_C_QUANTITY) {UNIQUE_C_STY
 
 
 
+
 /*@ define:module:mini_games
 name: Minigames
 subtitle: Set Unique Teirs and Hide Drops
@@ -7757,6 +7770,7 @@ enum: ["Fletching knife","Bow string spool", "Ent Branch", "Greenman mask"]
 #define VALE_FLETCHING_C_UNIQUES ["Ent Branch"]
 
 rule (name:VALE_FLETCHING_C_UNIQUES) {UNIQUE_C_STYLE}
+
 
 
 
@@ -8960,6 +8974,7 @@ apply ((PERFECT_KILL_LISTS)))) {menuSort = -50000;}
 
 
 
+
 /*@ define:module:currency
 name: Currency
 subtitle: Used to Trade with other Players and Vendors
@@ -9335,6 +9350,7 @@ rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_E_
 
 
 
+
 /*@ define:module:alchs
 name: Alchs
 subtitle: Turn Everything to Gold
@@ -9476,6 +9492,7 @@ rule (name:ALCHS_NAMES && !name:ALCHS_BAD_NAMES && havalue:>=ALCHS_MIN_VALUE && 
 rule (name:ALCHS_NAMES && !name:ALCHS_BAD_NAMES && havalue:>=ALCHS_MIN_VALUE && havalue:>=ALCHS_C_VALUE) {ALCHS_C_STYLE}
 rule (name:ALCHS_NAMES && !name:ALCHS_BAD_NAMES && havalue:>=ALCHS_MIN_VALUE && havalue:>=ALCHS_D_VALUE) {ALCHS_D_STYLE}
 rule (name:ALCHS_NAMES && !name:ALCHS_BAD_NAMES && havalue:>=ALCHS_MIN_VALUE && havalue:>=ALCHS_E_VALUE) {ALCHS_E_STYLE}
+
 
 
 
@@ -9972,6 +9989,7 @@ rule (name:KEYS_E_NAMES || (KEYS_MOON_KEY_E && id:[30107,30105])) {KEYS_E_STYLE}
 
 
 
+
 /*@ define:module:misc
 name: Miscellaneous
 subtitle: Things Too Small for their own Catagory  
@@ -10052,6 +10070,7 @@ rule (name:"Orange spice*") {ORANGE_SPICE_STYLE}
 
 
 
+
 /*@ define:module:fallback
 name: Fallback Tier Styles
 subtitle: For Items that haven't been Changed by Other Catagories
@@ -10082,7 +10101,7 @@ type: number
 label: B Value
 type: number
 */
-#define FALLBACK_VALUE_B 10000
+#define FALLBACK_VALUE_B 30000
 
 
 /*@ define:input:fallback
@@ -10109,31 +10128,31 @@ type: number
 label: SS Tier
 type: style
 */
-#define FALLBACK_SS_STYLE textColor = "#7d000000";backgroundColor = "#00ffffff";borderColor = "#00000000";lootbeamColor = "#ffff0000";menuTextColor = "#ff9640";textAccent = 3;fontType = 3;showLootbeam = false;showValue = false;highlightTile = false;sound = "DropSS.wav";menuSort = 50000;
+#define FALLBACK_SS_STYLE textColor = "#FFFF9600";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#ffff0000";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";
 
 /*@ define:input:fallback
 label: S Tier
 type: style
 */
-#define FALLBACK_S_STYLE textColor = "#9c000000";backgroundColor = "#00ffbfea";borderColor = "#00000000";lootbeamColor = "#FFFFBFEA";menuTextColor = "#ff9640";textAccent = 3;fontType = 3;showLootbeam = false;showValue = false;highlightTile = false;sound = "DropS.wav";menuSort = 40000;
+#define FALLBACK_S_STYLE textColor = "#FFFF66B2";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#FFFFBFEA";menuTextColor = "#FFFF66B2";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 1000000;
 
 /*@ define:input:fallback
 label: A Tier
 type: style
 */
-#define FALLBACK_A_STYLE textColor = "#9c000000";backgroundColor = "#00ffcc00";borderColor = "#00000000";menuTextColor = "#ff9640";textAccent = 3;fontType = 2;showLootbeam = false;showValue = false;highlightTile = false;sound = "DropA.wav";menuSort = 30000;
+#define FALLBACK_A_STYLE textColor = "#FF99FF99";backgroundColor = "#00ff0000";borderColor = "#00ff0000";menuTextColor = "#FF99FF99";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 100000;
 
 /*@ define:input:fallback
 label: B Tier
 type: style
 */
-#define FALLBACK_B_STYLE textColor = "#9c000000";backgroundColor = "#0000c8ff";borderColor = "#00000000";menuTextColor = "#ff9640";textAccent = 3;showLootbeam = false;showValue = false;highlightTile = false;menuSort = 20000;
+#define FALLBACK_B_STYLE textColor = "#FF66B2FF";backgroundColor = "#00ff0000";borderColor = "#00ff0000";menuTextColor = "#FF66B2FF";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 30000;
 
 /*@ define:input:fallback
 label: C Tier
 type: style
 */
-#define FALLBACK_C_STYLE textColor = "#9c000000";backgroundColor = "#007cff1f";borderColor = "#00000000";menuTextColor = "#ff9640";textAccent = 3;showLootbeam = false;showValue = false;highlightTile = false;menuSort = 10000;
+#define FALLBACK_C_STYLE textColor = "#9c000000";backgroundColor = "#00ff0000";menuTextColor = "#ff9640";textAccent = 3;fontType = 2;showLootbeam = false;showValue = false;showDespawn = false;highlightTile = false;sound = "Unique_SS.wav";menuSort = 30000;
 	
 /*@ define:input:fallback
 label: D Tier
