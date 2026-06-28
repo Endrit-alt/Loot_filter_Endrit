@@ -9,11 +9,13 @@ meta { name = "Endrit"; description = "Endrit's Ironman Filter"; }
 
 
 
+
 /*@ define:module:greetings
 name: Welcome to Endrit's Iron Filter
 description:
     This is filter made for Ironman players. Sit back, relax, and turn off item value. Items are organized into different tiers base on value to ironman, rather than GE price. 
 */
+
 
 
 
@@ -77,6 +79,7 @@ type: boolean
 group: Show
 */
 #define ENABLE_UIM_DEATH_PILES false
+
 
 
 
@@ -276,6 +279,7 @@ rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2
 
 
 
+
 /*@ define:module:food_and_pots
 name: Food and Potions
 subtitle: Never Forget your Pots Again
@@ -375,6 +379,7 @@ rule (name:EXTRA_FOOD_3_NAMES && stackable:false) {EXTRA_FOOD_3_STYLE}
 
 
 
+
 /*@ define:module:uniques
 name: Uniques 
 subtitle: Style your Collection Log drops 
@@ -384,25 +389,25 @@ subtitle: Style your Collection Log drops
 label: SS Tier Uniques
 type: style
 */
-#define UNIQUE_SS_STYLE hidden = true;
+#define UNIQUE_SS_STYLE hidden = false;textColor = "#FFFF66B2";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 1000000;
 
 /*@ define:input:uniques
 label: S Tier Uniques
 type: style
 */
-#define UNIQUE_S_STYLE hidden = true;
+#define UNIQUE_S_STYLE hidden = false;textColor = "#FFFF9600";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";
 
 /*@ define:input:uniques
 label: A Tier Uniques
 type: style
 */
-#define UNIQUE_A_STYLE hidden = true;
+#define UNIQUE_A_STYLE hidden = false;textColor = "#FF99FF99";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#FF99FF99";menuTextColor = "#FF99FF99";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 100000;
 
 /*@ define:input:uniques
 label: B Tier Uniques
 type: style
 */
-#define UNIQUE_B_STYLE hidden = true;
+#define UNIQUE_B_STYLE hidden = false;textColor = "#FF66B2FF";backgroundColor = "#00ff0000";borderColor = "#00ff0000";menuTextColor = "#FF66B2FF";textAccent = 1;fontType = 2;showLootbeam = false;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 30000;
 
 /*@ define:input:uniques
 label: C Tier Uniques
@@ -584,6 +589,7 @@ group: Custom Uniques
 #define UNIQUE_CUSTOM_C_NAMES ["Stinkhorn mushroom","Endarkened juice","Mallignum root plank","Larran's key","Looting bag","Dark totem top","Dark totem middle","Dark totem base","Ancient shard","Blood shard","Dragon defender","Mossy key","Brittle key","Buchu seed","Contract of sensory clouding","Contract of forfeit breath","Contract of divine severance","Contract of bloodied blows","Contract of glyphic attenuation","Dragon arrowtips","Rune knife","Dragon cannonball","Rune cannonball"]
 
 rule (name:UNIQUE_CUSTOM_C_NAMES) {UNIQUE_C_STYLE}
+
 
 
 
@@ -2117,6 +2123,7 @@ group: Smoke Devils
 #define SMOKE_DEVILS_SUPPLY []
 
 SUPPLY_DROP_RULESET([2378,9415,0,2429,9471,0], SMOKE_DEVILS_SUPPLY)
+
 
 
 
@@ -6271,6 +6278,7 @@ rule (name:WILDERNESS_BOSSES_C_UNIQUES) {UNIQUE_C_STYLE}
 
 
 
+
 /*@ define:module:cox
 name: Chambers of Xeric
 subtitle: Set Unique Teirs, Hide Drops, and Highlight Supplies
@@ -6508,6 +6516,7 @@ rule (area:[3210,5120,0,3369,5776,1] && name:SHOW_COX) {hidden = false;}
 
 
 
+
 /*@ define:module:tob
 name: Theatre of Blood
 subtitle: Set Unique Teirs, Hide Drops, and Highlight Supplies
@@ -6581,6 +6590,7 @@ exampleItem: Dawnbringer
 #define TOB_DAWNBRINGER hidden = false;textColor = "#ff00ffab";fontType = 3;showLootbeam = true;
 
 rule (name:"Dawnbringer") {TOB_DAWNBRINGER}
+
 
 
 
@@ -6716,6 +6726,7 @@ group: Red-X
 
 
 rule (area:[3786,5398,0,3828,5419,0] && ownership:2 && ENABLE_TOA_REDX) {TOA_REDX_STYLE}
+
 
 
 
@@ -6860,6 +6871,7 @@ exampleItem: Reward casket (master)
 #define CASKET_MASTER_STYLE textColor = "#ffc90808";backgroundColor = "#ffffffff";borderColor = "#ffc90808";
 
 rule (name:["Reward casket (master)"]) {CASKET_MASTER_STYLE}
+
 
 
 
@@ -7320,6 +7332,7 @@ rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_C_QUANTITY) {UNIQUE_C_STY
 
 
 
+
 /*@ define:module:mini_games
 name: Minigames
 subtitle: Set Unique Teirs and Hide Drops
@@ -7770,6 +7783,7 @@ enum: ["Fletching knife","Bow string spool", "Ent Branch", "Greenman mask"]
 #define VALE_FLETCHING_C_UNIQUES ["Ent Branch"]
 
 rule (name:VALE_FLETCHING_C_UNIQUES) {UNIQUE_C_STYLE}
+
 
 
 
@@ -8975,6 +8989,7 @@ apply ((PERFECT_KILL_LISTS)))) {menuSort = -50000;}
 
 
 
+
 /*@ define:module:currency
 name: Currency
 subtitle: Used to Trade with other Players and Vendors
@@ -9351,6 +9366,7 @@ rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_E_
 
 
 
+
 /*@ define:module:alchs
 name: Alchs
 subtitle: Turn Everything to Gold
@@ -9492,6 +9508,7 @@ rule (name:ALCHS_NAMES && !name:ALCHS_BAD_NAMES && havalue:>=ALCHS_MIN_VALUE && 
 rule (name:ALCHS_NAMES && !name:ALCHS_BAD_NAMES && havalue:>=ALCHS_MIN_VALUE && havalue:>=ALCHS_C_VALUE) {ALCHS_C_STYLE}
 rule (name:ALCHS_NAMES && !name:ALCHS_BAD_NAMES && havalue:>=ALCHS_MIN_VALUE && havalue:>=ALCHS_D_VALUE) {ALCHS_D_STYLE}
 rule (name:ALCHS_NAMES && !name:ALCHS_BAD_NAMES && havalue:>=ALCHS_MIN_VALUE && havalue:>=ALCHS_E_VALUE) {ALCHS_E_STYLE}
+
 
 
 
@@ -9990,6 +10007,7 @@ rule (name:KEYS_E_NAMES || (KEYS_MOON_KEY_E && id:[30107,30105])) {KEYS_E_STYLE}
 
 
 
+
 /*@ define:module:misc
 name: Miscellaneous
 subtitle: Things Too Small for their own Catagory  
@@ -10071,6 +10089,7 @@ rule (name:"Orange spice*") {ORANGE_SPICE_STYLE}
 
 
 
+
 /*@ define:module:fallback
 name: Fallback Tier Styles
 subtitle: For Items that haven't been Changed by Other Catagories
@@ -10128,25 +10147,25 @@ type: number
 label: SS Tier
 type: style
 */
-#define FALLBACK_SS_STYLE textColor = "#FFFF9600";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#ffff0000";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";
+#define FALLBACK_SS_STYLE hidden = false;textColor = "#FFFF66B2";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 1000000;
 
 /*@ define:input:fallback
 label: S Tier
 type: style
 */
-#define FALLBACK_S_STYLE textColor = "#FFFF66B2";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#FFFFBFEA";menuTextColor = "#FFFF66B2";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 1000000;
+#define FALLBACK_S_STYLE hidden = false;textColor = "#FFFF9600";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 1000000;
 
 /*@ define:input:fallback
 label: A Tier
 type: style
 */
-#define FALLBACK_A_STYLE textColor = "#FF99FF99";backgroundColor = "#00ff0000";borderColor = "#00ff0000";menuTextColor = "#FF99FF99";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 100000;
+#define FALLBACK_A_STYLE textColor = "#FF99FF99";backgroundColor = "#00ff0000";borderColor = "#00ff0000";lootbeamColor = "#FF99FF99";menuTextColor = "#FF99FF99";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 100000;
 
 /*@ define:input:fallback
 label: B Tier
 type: style
 */
-#define FALLBACK_B_STYLE textColor = "#FF66B2FF";backgroundColor = "#00ff0000";borderColor = "#00ff0000";menuTextColor = "#FF66B2FF";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 30000;
+#define FALLBACK_B_STYLE textColor = "#FF66B2FF";backgroundColor = "#00ff0000";borderColor = "#00ff0000";menuTextColor = "#FF66B2FF";textAccent = 1;fontType = 2;showLootbeam = false;showValue = false;showDespawn = false;notify = true;highlightTile = false;sound = "Unique_SS.wav";menuSort = 30000;
 
 /*@ define:input:fallback
 label: C Tier
